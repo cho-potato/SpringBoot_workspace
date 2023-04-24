@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="zxx" xmlns="http://www.thymeleaf.org">
+<head>
+<th:block th:replace="/shop/inc/head.html" />
+</head>
+<style>
+div.form-group {
+	width: 300px;
+	border: 1px solid #333333;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.row-bt {
+width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+</style>
+<body>
+	<!-- Preloader Start -->
+	<th:block th:replace="/shop/inc/preloader.html" />
+	<!-- Preloader Start -->
+
+	<header>
+		<!-- Header Start -->
+		<div class="header-area">
+			<div class="main-header ">
+				<!-- top 링크 Start -->
+				<th:block th:replace="/shop/inc/top_link.html" />
+				<!-- top 링크 End -->
+
+				<!-- 메인 Navi Start -->
+				<th:block th:replace="/shop/inc/main_navi.html" />
+				<!-- 메인 Navi End -->
+
+			</div>
+		</div>
+		<!-- Header End -->
+	</header>
+
+	<main>
+
+		<!-- 메인 배너 Start -->
+		<!-- <th:block th:replace="/shop/inc/main_banner.html"/> -->
+		<!-- 메인 배너 End-->
+
+		<div class="container">
+		
+			<div class="row1">
+				<img class="card-img-center" src="/shop/assets/img/logo/logo.png" alt="logo image" style="padding-top: 10%; margin: auto; display: block;">
+			</div>
+			
+			<div class="row2" style="padding-top: 10%; display: block;">
+				<div class="form-group" style="width:33%;">
+					<input type="email" class="form-control" placeholder="Enter id" id="id">
+				</div>
+				<div class="form-group" style="width:33%;">
+					<input type="password" class="form-control" placeholder="Enter password" id="pwd">
+				</div>
+				<div>
+					<button type="button" class="btn_3" id="bt_login" style="width:33%; margin: auto; display: block;">
+						<span>Log-in</span>
+					</button>
+				</div>
+			</div>
+			
+			<div class="row3">
+				 <hr class="container-m-nx border-dark mt-5" style="width:33%; margin: auto;">
+			</div>
+			
+			<div class="row4" style="padding-top: 5%; display: block;">
+				<div>
+					<a href="#" class="genric-btn primary-border radius" style="margin: auto; display: block;">
+						<img class="card-img-center" src="/shop/assets/img/snslogin/naver.png" alt="naver_login_image">
+						<span>네이버로 로그인</span>
+					</a>
+					<a href="#" class="genric-btn primary-border radius">
+						<img class="card-img-center" src="/shop/assets/img/snslogin/kakao.png" alt="kakao_login_image">
+						<span>카카오로 로그인</span>
+					</a>
+					<button type="button" class="btn" id="bt_naver" style="height: 25%; margin: auto; display: block;">
+						<img class="card-img-center" src="/shop/assets/img/snslogin/naver.png" alt="naver_login_image">
+						<span>네이버로 로그인</span>
+					</button>
+				</div>
+				<div>
+					<button type="button" class="btn" id="bt_kakao" style="height: 50%; margin: auto; display: block;">
+						<img class="card-img-center" src="/shop/assets/img/snslogin/kakao.png" alt="kakao_login_image">
+						<span>카카오로 로그인</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<th:block th:replace="/shop/inc/footer.html" />
+	</footer>
+
+	<!— JS here —>
+	<th:block th:replace="/shop/inc/footer_link.html" />
+
+</body>
+</html>
